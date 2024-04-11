@@ -16,19 +16,19 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans          &trans    &trans  &trans  &trans  &trans  &kp BACKSPACE
-&trans  &trans  &trans  &trans          &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans          &trans    &trans  &trans  &trans  &trans  &trans
-                        &sk LEFT_SHIFT  &trans    &trans  &trans
+&trans  &trans  &trans  &trans          &trans    &bootloader  &trans  &trans  &trans  &kp BACKSPACE
+&trans  &trans  &trans  &trans          &trans    &trans       &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans    &trans       &trans  &trans  &trans  &trans
+                        &sk LEFT_SHIFT  &trans    &trans       &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &bootloader    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans         &trans  &trans
             >;
         };
     };
