@@ -30,6 +30,70 @@
             require-prior-idle-ms = <1>;
             layers = <0 1>;
         };
+
+        L-GUI {
+            bindings = <&kp LGUI>;
+            key-positions = <10 11>;
+            timeout-ms = <500>;
+            require-prior-idle-ms = <1>;
+            layers = <0 1>;
+        };
+
+        R-GUI {
+            bindings = <&kp RGUI>;
+            key-positions = <19 18>;
+            timeout-ms = <500>;
+            require-prior-idle-ms = <1>;
+            layers = <0 1>;
+        };
+
+        L-ALT {
+            bindings = <&kp LALT>;
+            key-positions = <11 13>;
+            timeout-ms = <500>;
+            require-prior-idle-ms = <1>;
+            layers = <0 1>;
+        };
+
+        R-ALT {
+            bindings = <&kp RALT>;
+            key-positions = <18 16>;
+            timeout-ms = <500>;
+            require-prior-idle-ms = <1>;
+            layers = <0 1>;
+        };
+
+        L-SHIFT {
+            bindings = <&kp LSHIFT>;
+            key-positions = <11 12>;
+            timeout-ms = <500>;
+            require-prior-idle-ms = <1>;
+            layers = <0 1>;
+        };
+
+        R-SHIFT {
+            bindings = <&kp RSHIFT>;
+            key-positions = <18 17>;
+            timeout-ms = <500>;
+            require-prior-idle-ms = <1>;
+            layers = <0 1>;
+        };
+
+        L-CTRL {
+            bindings = <&kp LCTRL>;
+            key-positions = <12 13>;
+            timeout-ms = <500>;
+            require-prior-idle-ms = <1>;
+            layers = <0 1>;
+        };
+
+        R-CTRL {
+            bindings = <&kp RCTRL>;
+            key-positions = <16 17>;
+            timeout-ms = <500>;
+            require-prior-idle-ms = <1>;
+            layers = <0 1>;
+        };
     };
 
     keymap {
