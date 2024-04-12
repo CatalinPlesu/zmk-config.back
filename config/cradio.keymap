@@ -119,10 +119,10 @@
 
         navigation {
             bindings = <
-&trans  &trans  &trans     &trans     &trans    &trans    &trans    &trans  &trans     &trans
-&trans  &trans  &trans     &trans     &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
-&trans  &trans  &kp LSHFT  &kp LCTRL  &trans    &trans    &trans    &trans  &trans     &trans
-                           &trans     &trans    &trans    &trans
+&kp ESC   &caps_word  &trans     &trans      &trans    &trans    &trans    &trans  &trans     &kp BSPC
+&sk LGUI  &sk LALT    &sk LCTRL  &sk LSHIFT  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
+&kp TAB   &kp CAPS    &kp LSHFT  &kp LCTRL   &trans    &trans    &trans    &trans  &trans     &trans
+                                 &trans      &trans    &trans    &trans
             >;
         };
 
