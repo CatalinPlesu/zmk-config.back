@@ -31,7 +31,7 @@
             layers = <0 1>;
         };
 
-        L-GUI {
+        lgui {
             bindings = <&kp LGUI>;
             key-positions = <10 11>;
             timeout-ms = <500>;
@@ -39,7 +39,7 @@
             layers = <0 1>;
         };
 
-        R-GUI {
+        rgui {
             bindings = <&kp RGUI>;
             key-positions = <19 18>;
             timeout-ms = <500>;
@@ -47,7 +47,7 @@
             layers = <0 1>;
         };
 
-        L-ALT {
+        lalt {
             bindings = <&kp LALT>;
             key-positions = <11 13>;
             timeout-ms = <500>;
@@ -55,7 +55,7 @@
             layers = <0 1>;
         };
 
-        R-ALT {
+        ralt {
             bindings = <&kp RALT>;
             key-positions = <18 16>;
             timeout-ms = <500>;
@@ -63,7 +63,7 @@
             layers = <0 1>;
         };
 
-        L-SHIFT {
+        lshift {
             bindings = <&kp LSHIFT>;
             key-positions = <11 12>;
             timeout-ms = <500>;
@@ -71,7 +71,7 @@
             layers = <0 1>;
         };
 
-        R-SHIFT {
+        rshift {
             bindings = <&kp RSHIFT>;
             key-positions = <18 17>;
             timeout-ms = <500>;
@@ -79,7 +79,7 @@
             layers = <0 1>;
         };
 
-        L-CTRL {
+        lctrl {
             bindings = <&kp LCTRL>;
             key-positions = <12 13>;
             timeout-ms = <500>;
@@ -87,7 +87,7 @@
             layers = <0 1>;
         };
 
-        R-CTRL {
+        rctrl {
             bindings = <&kp RCTRL>;
             key-positions = <16 17>;
             timeout-ms = <500>;
