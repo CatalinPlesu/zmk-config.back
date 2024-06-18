@@ -133,7 +133,7 @@
 &kp ESC                  &caps_word               &trans                     &trans                           &trans    &trans    &trans    &trans  &trans     &kp BSPC
 &new_behavior LGUI LGUI  &new_behavior LALT LALT  &new_behavior LCTRL LCTRL  &new_behavior LSHIFT LEFT_SHIFT  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
 &kp TAB                  &kp CAPS                 &trans                     &trans                           &trans    &trans    &trans    &trans  &trans     &trans
-                                                                             &trans                           &trans    &trans    &trans
+                                                                             &trans                           &trans    &kp DEL   &trans
             >;
         };
 
