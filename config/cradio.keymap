@@ -132,7 +132,7 @@
         navigation {
             bindings = <
 &kp ESC                  &caps_word               &kp CAPS                   &kp TAB                          &trans           &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp BSPC
-&hold_tap_mod LGUI LGUI  &hold_tap_mod LALT LALT  &hold_tap_mod LCTRL LCTRL  &hold_tap_mod LSHIFT LEFT_SHIFT  &kp BACKSPACE    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
+&hold_tap_mod LGUI LGUI  &hold_tap_mod LALT LALT  &hold_tap_mod LCTRL LCTRL  &hold_tap_mod LSHIFT LEFT_SHIFT  &kp BACKSPACE    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp BACKSPACE
 &kp TAB                  &kp CAPS                 &trans                     &trans                           &trans           &trans    &kp TAB        &trans       &trans     &trans
                                                                              &none                            &none            &kp DEL   &kp BACKSPACE
             >;
