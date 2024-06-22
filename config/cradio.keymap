@@ -12,7 +12,7 @@
             timeout-ms = <500>;
             require-prior-idle-ms = <1>;
             slow-release;
-            layers = <0 1>;
+            layers = <1 0>;
         };
 
         settings-layer-left {
@@ -20,7 +20,7 @@
             key-positions = <0 3>;
             timeout-ms = <500>;
             require-prior-idle-ms = <1>;
-            layers = <0 1>;
+            layers = <1 0>;
         };
 
         settings-layer-right {
@@ -28,7 +28,7 @@
             key-positions = <6 9>;
             timeout-ms = <500>;
             require-prior-idle-ms = <1>;
-            layers = <0 1>;
+            layers = <1 0>;
         };
 
         lgui {
@@ -36,7 +36,7 @@
             key-positions = <10 11>;
             timeout-ms = <50>;
             require-prior-idle-ms = <1>;
-            layers = <0 1>;
+            layers = <1 0>;
         };
 
         rgui {
@@ -44,7 +44,7 @@
             key-positions = <19 18>;
             timeout-ms = <50>;
             require-prior-idle-ms = <1>;
-            layers = <0 1>;
+            layers = <1 0>;
         };
 
         lalt {
@@ -52,7 +52,7 @@
             key-positions = <11 13>;
             timeout-ms = <50>;
             require-prior-idle-ms = <1>;
-            layers = <0 1>;
+            layers = <1 0>;
         };
 
         ralt {
@@ -60,7 +60,7 @@
             key-positions = <18 16>;
             timeout-ms = <50>;
             require-prior-idle-ms = <1>;
-            layers = <0 1>;
+            layers = <1 0>;
         };
 
         lshift {
@@ -68,7 +68,7 @@
             key-positions = <11 12>;
             timeout-ms = <50>;
             require-prior-idle-ms = <1>;
-            layers = <0 1>;
+            layers = <1 0>;
         };
 
         rshift {
@@ -76,7 +76,7 @@
             key-positions = <18 17>;
             timeout-ms = <50>;
             require-prior-idle-ms = <1>;
-            layers = <0 1>;
+            layers = <1 0>;
         };
 
         lctrl {
@@ -84,7 +84,7 @@
             key-positions = <12 13>;
             timeout-ms = <50>;
             require-prior-idle-ms = <1>;
-            layers = <0 1>;
+            layers = <1 0>;
         };
 
         rctrl {
@@ -92,7 +92,7 @@
             key-positions = <16 17>;
             timeout-ms = <50>;
             require-prior-idle-ms = <1>;
-            layers = <0 1>;
+            layers = <1 0>;
         };
     };
 
@@ -112,15 +112,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        qwerty {
-            bindings = <
-&kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI
-&kp Z  &kp X  &kp C  &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH
-                     &mo 4  &kp SPACE    &kp RET  &mo 2
-            >;
-        };
-
         asset {
             bindings = <
 &kp Q  &kp W  &kp J  &kp F   &kp G     &kp Y   &kp P   &kp U      &kp L    &kp SEMI
@@ -130,30 +121,39 @@
             >;
         };
 
-        numbers {
+        qwerty {
             bindings = <
-&kp ESC       &kp GRAVE     &kp LS(LPAR)  &kp LBKT      &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RBKT      &kp LS(RPAR)  &trans                &kp BACKSPACE
-&kp NUMBER_9  &kp NUMBER_5  &kp NUMBER_0  &kp NUMBER_3  &kp NUMBER_7      &kp NUMBER_6     &kp NUMBER_2  &kp NUMBER_1  &kp NUMBER_4          &kp NUMBER_8
-&caps_word    &trans        &kp TAB       &kp LS(PLUS)  &kp MINUS         &kp EQUAL        &kp FSLH      &kp LS(STAR)  &kp NON_US_BACKSLASH  &kp SQT
-                                          &to 3         &kp LSHFT         &kp RCTRL        &trans
-            >;
-        };
-
-        functions {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans   &trans  &trans  &trans  &trans
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp F6   &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &kp F11    &kp F12  &trans  &trans  &trans  &trans
-                        &to 0   &trans     &trans   &to 0
+&kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P
+&kp A  &kp S  &kp D  &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI
+&kp Z  &kp X  &kp C  &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH
+                     &mo 2  &kp SPACE    &kp RET  &mo 3
             >;
         };
 
         navigation {
             bindings = <
-&kp ESC                  &caps_word               &trans                     &trans                           &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp BSPC
-&hold_tap_mod LGUI LGUI  &hold_tap_mod LALT LALT  &hold_tap_mod LCTRL LCTRL  &hold_tap_mod LSHIFT LEFT_SHIFT  &trans    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
-&kp TAB                  &kp CAPS                 &trans                     &trans                           &trans    &trans    &kp TAB        &trans       &trans     &trans
-                                                                             &trans                           &trans    &kp DEL   &kp BACKSPACE
+&kp ESC                  &caps_word               &kp CAPS                   &kp TAB                          &trans           &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp BSPC
+&hold_tap_mod LGUI LGUI  &hold_tap_mod LALT LALT  &hold_tap_mod LCTRL LCTRL  &hold_tap_mod LSHIFT LEFT_SHIFT  &kp BACKSPACE    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
+&kp TAB                  &kp CAPS                 &trans                     &trans                           &trans           &trans    &kp TAB        &trans       &trans     &trans
+                                                                             &none                            &none            &kp DEL   &kp BACKSPACE
+            >;
+        };
+
+        numbers {
+            bindings = <
+&kp ESC       &kp GRAVE     &kp LS(LPAR)  &kp LBKT      &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RBKT      &kp LS(RPAR)  &trans                &kp BACKSPACE
+&kp NUMBER_9  &kp NUMBER_5  &kp NUMBER_0  &kp NUMBER_3  &kp NUMBER_7      &kp NUMBER_6     &kp NUMBER_2  &kp NUMBER_1  &kp NUMBER_4          &kp NUMBER_8
+&kp LGUI      &kp LALT      &kp LCTRL     &kp LS(PLUS)  &kp MINUS         &kp EQUAL        &kp FSLH      &kp LS(STAR)  &kp NON_US_BACKSLASH  &kp SQT
+                                          &mo 4         &kp LSHFT         &none            &none
+            >;
+        };
+
+        functions {
+            bindings = <
+&caps_word  &kp CAPS  &kp TAB    &trans     &trans     &trans   &trans     &trans     &trans    &trans
+&kp F1      &kp F2    &kp F3     &kp F4     &kp F5     &kp F6   &kp F7     &kp F8     &kp F9    &kp F10
+&kp LGUI    &kp LALT  &kp LCTRL  &kp LSHFT  &kp F11    &kp F12  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+                                 &trans     &trans     &trans   &trans
             >;
         };
 
@@ -162,7 +162,7 @@
 &bt BT_CLR  &bt BT_CLR_ALL  &trans        &trans  &bootloader    &bootloader  &trans  &trans  &trans  &trans
 &bt BT_PRV  &bt BT_NXT      &bt BT_SEL 0  &trans  &trans         &trans       &trans  &trans  &trans  &trans
 &trans      &trans          &trans        &trans  &trans         &trans       &trans  &trans  &trans  &trans
-                                          &to 0   &trans         &trans       &trans
+                                          &to 1   &trans         &trans       &trans
             >;
         };
     };
