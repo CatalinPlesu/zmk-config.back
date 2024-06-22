@@ -161,7 +161,7 @@
 &bt BT_CLR  &bt BT_CLR_ALL  &trans        &trans  &bootloader    &bootloader  &trans  &trans  &trans  &trans
 &bt BT_PRV  &bt BT_NXT      &bt BT_SEL 0  &trans  &trans         &trans       &trans  &trans  &trans  &trans
 &trans      &trans          &trans        &trans  &trans         &trans       &trans  &trans  &trans  &trans
-                                          &to 1   &trans         &trans       &trans
+                                          &tog 5  &trans         &trans       &tog 5
             >;
         };
     };
