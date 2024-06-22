@@ -133,7 +133,7 @@
         numbers {
             bindings = <
 &kp ESC       &kp GRAVE     &kp LS(LPAR)  &kp LBKT      &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RBKT      &kp LS(RPAR)  &trans                &kp BACKSPACE
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0
+&kp NUMBER_9  &kp NUMBER_5  &kp NUMBER_0  &kp NUMBER_3  &kp NUMBER_7      &kp NUMBER_6     &kp NUMBER_2  &kp NUMBER_1  &kp NUMBER_4          &kp NUMBER_8
 &caps_word    &trans        &kp TAB       &kp LS(PLUS)  &kp MINUS         &kp EQUAL        &kp FSLH      &kp LS(STAR)  &kp NON_US_BACKSLASH  &kp SQT
                                           &to 3         &kp LSHFT         &kp RCTRL        &trans
             >;
