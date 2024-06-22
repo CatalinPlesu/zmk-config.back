@@ -8,7 +8,7 @@
 
         asset {
             bindings = <&tog 1>;
-            key-positions = <30 33>;
+            key-positions = <20 29>;
             timeout-ms = <500>;
             require-prior-idle-ms = <1>;
             slow-release;
