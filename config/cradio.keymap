@@ -97,13 +97,15 @@
     };
 
     behaviors {
-        new_behavior: new_behavior {
+        hold_tap_mod: hold_tap_mod {
             compatible = "zmk,behavior-hold-tap";
-            label = "NEW_BEHAVIOR";
+            label = "HOLD_TAP_MOD";
             bindings = <&kp>, <&sk>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            hold-while-undecided;
         };
     };
 
@@ -149,7 +151,7 @@
         navigation {
             bindings = <
 &kp ESC                  &caps_word               &trans                     &trans                           &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp BSPC
-&new_behavior LGUI LGUI  &new_behavior LALT LALT  &new_behavior LCTRL LCTRL  &new_behavior LSHIFT LEFT_SHIFT  &trans    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
+&hold_tap_mod LGUI LGUI  &hold_tap_mod LALT LALT  &hold_tap_mod LCTRL LCTRL  &hold_tap_mod LSHIFT LEFT_SHIFT  &trans    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
 &kp TAB                  &kp CAPS                 &trans                     &trans                           &trans    &trans    &kp TAB        &trans       &trans     &trans
                                                                              &trans                           &trans    &kp DEL   &kp BACKSPACE
             >;
