@@ -94,6 +94,22 @@
             require-prior-idle-ms = <25>;
             layers = <1 0>;
         };
+
+        ctrl-shift {
+            bindings = <&ctrl_shift>;
+            key-positions = <16 32 17>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <25>;
+            layers = <1 0>;
+        };
+
+        l_ctrl_shift {
+            bindings = <&ctrl_shift>;
+            key-positions = <12 13 31>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <25>;
+            layers = <1 0>;
+        };
     };
 
     behaviors {
@@ -105,6 +121,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             flavor = "tap-preferred";
+        };
+    };
+
+    macros {
+        ctrl_shift: ctrl_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LEFT_SHIFT>;
+            label = "CTRL_SHIFT";
         };
     };
 
