@@ -116,11 +116,13 @@
         hold_tap_mod: hold_tap_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_MOD";
-            bindings = <&kp>, <&sk>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <700>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
         };
     };
 
@@ -138,10 +140,10 @@
 
         asset {
             bindings = <
-&kp Q  &kp W  &kp J  &kp F  &kp G        &kp Y      &kp P  &kp U      &kp L    &kp SEMI
-&kp A  &kp S  &kp E  &kp T  &kp D        &kp H      &kp N  &kp I      &kp O    &kp R
-&kp Z  &kp X  &kp C  &kp V  &kp B        &kp K      &kp M  &kp COMMA  &kp DOT  &kp FSLH
-                     &mo 2  &kp SPACE    &kp ENTER  &mo 3
+&kp Q                 &kp W                     &kp J                   &kp F                  &kp G        &kp Y      &kp P  &kp U      &kp L    &kp SEMI
+&hold_tap_mod LGUI A  &hold_tap_mod LEFT_ALT S  &hold_tap_mod LSHIFT E  &hold_tap_mod LCTRL T  &kp D        &kp H      &kp N  &kp I      &kp O    &kp R
+&kp Z                 &kp X                     &kp C                   &kp V                  &kp B        &kp K      &kp M  &kp COMMA  &kp DOT  &kp FSLH
+                                                                        &mo 2                  &kp SPACE    &kp ENTER  &mo 3
             >;
         };
 
