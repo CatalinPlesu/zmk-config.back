@@ -120,7 +120,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <700>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
         };
@@ -130,7 +130,7 @@
         ctrl_shift: ctrl_shift {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_SHIFT>;
+            bindings = <&sk LCTRL &sk LEFT_SHIFT>;
             label = "CTRL_SHIFT";
         };
     };
@@ -140,9 +140,9 @@
 
         asset {
             bindings = <
-&kp Q                 &kp W                     &kp J                   &kp F                  &kp G        &kp Y      &kp P  &kp U      &kp L    &kp SEMI
-&hold_tap_mod LGUI A  &hold_tap_mod LEFT_ALT S  &hold_tap_mod LSHIFT E  &hold_tap_mod LCTRL T  &kp D        &kp H      &kp N  &kp I      &kp O    &kp R
-&kp Z                 &kp X                     &kp C                   &kp V                  &kp B        &kp K      &kp M  &kp COMMA  &kp DOT  &kp FSLH
+&kp Q                 &kp W                     &kp J                   &kp F                  &kp G        &kp Y      &kp P                  &kp U                   &kp L                     &kp SEMI
+&hold_tap_mod LGUI A  &hold_tap_mod LEFT_ALT S  &hold_tap_mod LSHIFT E  &hold_tap_mod LCTRL T  &kp D        &kp H      &hold_tap_mod LCTRL N  &hold_tap_mod LSHIFT I  &hold_tap_mod LEFT_ALT O  &hold_tap_mod LEFT_GUI R
+&kp Z                 &kp X                     &kp C                   &kp V                  &kp B        &kp K      &kp M                  &kp COMMA               &kp DOT                   &kp FSLH
                                                                         &mo 2                  &kp SPACE    &kp ENTER  &mo 3
             >;
         };
