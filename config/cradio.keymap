@@ -97,7 +97,7 @@
 
         ctrl-shift {
             bindings = <&ctrl_shift>;
-            key-positions = <16 32 17>;
+            key-positions = <16 17>;
             timeout-ms = <100>;
             require-prior-idle-ms = <25>;
             layers = <1 0>;
@@ -105,7 +105,7 @@
 
         l_ctrl_shift {
             bindings = <&ctrl_shift>;
-            key-positions = <12 13 31>;
+            key-positions = <12 13>;
             timeout-ms = <100>;
             require-prior-idle-ms = <25>;
             layers = <1 0>;
