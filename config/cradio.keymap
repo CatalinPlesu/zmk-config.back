@@ -156,7 +156,7 @@
 
         numbers {
             bindings = <
-&kp ESC       &kp GRAVE     &kp LS(LPAR)  &kp LBKT      &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RBKT      &kp LS(RPAR)  &kp AMPERSAND         &kp BACKSPACE
+&kp ESC       &kp GRAVE     &kp LS(LPAR)  &kp LBKT      &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RBKT      &kp LS(RPAR)  &kp BACKSLASH         &kp BACKSPACE
 &kp NUMBER_9  &kp NUMBER_5  &kp NUMBER_0  &kp NUMBER_3  &kp NUMBER_7      &kp NUMBER_6     &kp NUMBER_2  &kp NUMBER_1  &kp NUMBER_4          &kp NUMBER_8
 &kp LGUI      &kp LALT      &kp LCTRL     &kp LS(PLUS)  &kp MINUS         &kp EQUAL        &kp FSLH      &kp LS(STAR)  &kp NON_US_BACKSLASH  &kp SQT
                                           &mo 4         &kp LSHFT         &none            &none
