@@ -12,7 +12,7 @@
             timeout-ms = <500>;
             require-prior-idle-ms = <1>;
             slow-release;
-            layers = <1 0>;
+            layers = <0 1>;
         };
 
         settings-layer-left {
@@ -20,7 +20,7 @@
             key-positions = <0 3>;
             timeout-ms = <500>;
             require-prior-idle-ms = <1>;
-            layers = <1 0>;
+            layers = <0 1>;
         };
 
         settings-layer-right {
@@ -28,7 +28,7 @@
             key-positions = <6 9>;
             timeout-ms = <500>;
             require-prior-idle-ms = <1>;
-            layers = <1 0>;
+            layers = <0 1>;
         };
 
         lgui {
@@ -36,7 +36,7 @@
             key-positions = <30 12>;
             timeout-ms = <50>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0 1>;
         };
 
         rgui {
@@ -44,7 +44,7 @@
             key-positions = <33 17>;
             timeout-ms = <50>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0 1>;
         };
 
         lalt {
@@ -52,7 +52,7 @@
             key-positions = <13 30>;
             timeout-ms = <50>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0 1>;
         };
 
         ralt {
@@ -60,7 +60,7 @@
             key-positions = <16 33>;
             timeout-ms = <50>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0 1>;
         };
 
         lshift {
@@ -68,7 +68,7 @@
             key-positions = <31 12>;
             timeout-ms = <50>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0 1>;
         };
 
         rshift {
@@ -76,7 +76,7 @@
             key-positions = <32 17>;
             timeout-ms = <100>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0 1>;
         };
 
         lctrl {
@@ -84,7 +84,7 @@
             key-positions = <13 31>;
             timeout-ms = <50>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0 1>;
         };
 
         rctrl {
@@ -92,7 +92,7 @@
             key-positions = <16 32>;
             timeout-ms = <100>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0 1>;
         };
 
         ctrl-shift {
@@ -100,7 +100,7 @@
             key-positions = <16 17 32>;
             timeout-ms = <100>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0 1>;
         };
 
         l_ctrl_shift {
@@ -108,7 +108,7 @@
             key-positions = <12 13 31>;
             timeout-ms = <100>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0 1>;
         };
     };
 
@@ -127,21 +127,21 @@
     keymap {
         compatible = "zmk,keymap";
 
-        asset {
-            bindings = <
-&kp Q  &kp W  &kp J  &kp F  &kp G        &kp Y      &kp P  &kp U      &kp L    &kp SEMI
-&kp A  &kp S  &kp E  &kp T  &kp D        &kp H      &kp N  &kp I      &kp O    &kp R
-&kp Z  &kp X  &kp C  &kp V  &kp B        &kp K      &kp M  &kp COMMA  &kp DOT  &kp FSLH
-                     &mo 2  &kp SPACE    &kp ENTER  &mo 3
-            >;
-        };
-
         qwerty {
             bindings = <
 &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P
 &kp A  &kp S  &kp D  &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI
 &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH
                      &mo 2  &kp SPACE    &kp RET  &mo 3
+            >;
+        };
+
+        asset {
+            bindings = <
+&kp Q  &kp W  &kp J  &kp F  &kp G        &kp Y      &kp P  &kp U      &kp L    &kp SEMI
+&kp A  &kp S  &kp E  &kp T  &kp D        &kp H      &kp N  &kp I      &kp O    &kp R
+&kp Z  &kp X  &kp C  &kp V  &kp B        &kp K      &kp M  &kp COMMA  &kp DOT  &kp FSLH
+                     &mo 2  &kp SPACE    &kp ENTER  &mo 3
             >;
         };
 
