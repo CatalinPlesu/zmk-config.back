@@ -147,7 +147,7 @@
 
         navigation {
             bindings = <
-&kp ESC         &caps_word      &kp CAPS      &kp TAB          &kp LEFT_SHIFT    &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp BSPC
+&kp ESC         &caps_word      &kp CAPS      &kp LCTRL        &kp LEFT_SHIFT    &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp BSPC
 &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE     &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT  &kp BACKSPACE
 &kp TAB         &trans          &kp LCTRL     &kp TAB          &trans            &trans         &kp TAB        &trans       &trans     &trans
                                               &none            &none             &kp BACKSPACE  &kp DELETE
