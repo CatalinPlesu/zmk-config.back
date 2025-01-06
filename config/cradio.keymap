@@ -80,7 +80,7 @@
         };
 
         lctrl {
-            bindings = <&hold_tap_mod LCTRL LCTRL>;
+            bindings = <&kp LCTRL>;
             key-positions = <13 31>;
             timeout-ms = <50>;
             require-prior-idle-ms = <25>;
@@ -148,8 +148,8 @@
         navigation {
             bindings = <
 &kp ESC         &caps_word      &kp CAPS      &kp LCTRL        &kp LEFT_SHIFT    &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp BSPC
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE     &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT  &kp BACKSPACE
-&kp TAB         &trans          &kp LCTRL     &kp TAB          &trans            &trans         &kp TAB        &trans       &trans     &trans
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp TAB           &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT  &kp BACKSPACE
+&kp LC(Z)       &kp LC(X)       &kp LC(C)     &kp LC(V)        &kp BACKSPACE     &trans         &kp TAB        &trans       &trans     &trans
                                               &none            &none             &kp BACKSPACE  &kp DELETE
             >;
         };
