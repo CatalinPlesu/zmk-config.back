@@ -16,7 +16,7 @@
         };
 
         settings-layer-left {
-            bindings = <&to 5>;
+            bindings = <&to 6>;
             key-positions = <0 3>;
             timeout-ms = <500>;
             require-prior-idle-ms = <1>;
@@ -24,7 +24,7 @@
         };
 
         settings-layer-right {
-            bindings = <&to 5>;
+            bindings = <&to 6>;
             key-positions = <6 9>;
             timeout-ms = <500>;
             require-prior-idle-ms = <1>;
@@ -110,6 +110,11 @@
             require-prior-idle-ms = <25>;
             layers = <0 1>;
         };
+
+        macros {
+            bindings = <&tog 3>;
+            key-positions = <0 9>;
+        };
     };
 
     behaviors {
@@ -132,7 +137,7 @@
 &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P
 &kp A  &kp S  &kp D  &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI
 &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH
-                     &mo 2  &kp SPACE    &kp RET  &mo 3
+                     &mo 2  &kp SPACE    &kp RET  &mo 4
             >;
         };
 
@@ -141,7 +146,7 @@
 &kp Q  &kp W  &kp J  &kp F  &kp G        &kp Y      &kp P  &kp U      &kp L    &kp SEMI
 &kp A  &kp S  &kp E  &kp T  &kp D        &kp H      &kp N  &kp I      &kp O    &kp R
 &kp Z  &kp X  &kp C  &kp V  &kp B        &kp K      &kp M  &kp COMMA  &kp DOT  &kp FSLH
-                     &mo 2  &kp SPACE    &kp ENTER  &mo 3
+                     &mo 2  &kp SPACE    &kp ENTER  &mo 4
             >;
         };
 
@@ -154,12 +159,21 @@
             >;
         };
 
+        macros {
+            bindings = <
+&trans     &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans
+&trans     &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans    &trans  &trans  &trans  &trans  &trans
+                                 &trans     &trans    &trans  &trans
+            >;
+        };
+
         numbers {
             bindings = <
 &kp ESC   &kp GRAVE  &kp LS(LPAR)  &kp LBKT      &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RBKT  &kp LS(RPAR)  &kp BACKSLASH         &kp BACKSPACE
 &kp N1    &kp N2     &kp N3        &kp N4        &kp N5            &kp N6           &kp N7    &kp N8        &kp N9                &kp N0
 &kp LGUI  &kp LALT   &kp LCTRL     &kp LS(PLUS)  &kp MINUS         &kp EQUAL        &kp FSLH  &kp LS(STAR)  &kp NON_US_BACKSLASH  &kp SQT
-                                   &mo 4         &kp LSHFT         &none            &none
+                                   &mo 5         &kp LSHFT         &none            &none
             >;
         };
 
@@ -177,7 +191,7 @@
 &bt BT_CLR  &bt BT_CLR_ALL  &trans        &trans  &bootloader    &bootloader  &trans  &trans  &trans  &trans
 &bt BT_PRV  &bt BT_NXT      &bt BT_SEL 0  &trans  &trans         &trans       &trans  &trans  &trans  &trans
 &trans      &trans          &trans        &trans  &trans         &trans       &trans  &trans  &trans  &trans
-                                          &tog 5  &trans         &trans       &tog 5
+                                          &tog 6  &trans         &trans       &tog 6
             >;
         };
     };
