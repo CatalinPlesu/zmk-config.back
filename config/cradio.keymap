@@ -136,7 +136,7 @@
             bindings = <
 &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P
 &kp A  &kp S  &kp D  &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI
-&kp Z  &kp X  &kp C  &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH
+&kp Z  &kp X  &kp C  &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp SLASH
                      &mo 2  &kp SPACE    &kp RET  &mo 4
             >;
         };
@@ -170,9 +170,9 @@
 
         numbers {
             bindings = <
-&kp ESC   &kp GRAVE  &kp LS(LPAR)  &kp LBKT      &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RBKT  &kp LS(RPAR)  &kp BACKSLASH         &kp BACKSPACE
-&kp N1    &kp N2     &kp N3        &kp N4        &kp N5            &kp N6           &kp N7    &kp N8        &kp N9                &kp N0
-&kp LGUI  &kp LALT   &kp LCTRL     &kp LS(PLUS)  &kp MINUS         &kp EQUAL        &kp FSLH  &kp LS(STAR)  &kp NON_US_BACKSLASH  &kp SQT
+&kp ESC   &kp GRAVE  &kp LS(LPAR)  &kp LBKT      &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RBKT  &kp LS(RPAR)  &kp BACKSLASH  &kp BACKSPACE
+&kp N1    &kp N2     &kp N3        &kp N4        &kp N5            &kp N6           &kp N7    &kp N8        &kp N9         &kp N0
+&kp LGUI  &kp LALT   &kp LCTRL     &kp LS(PLUS)  &kp MINUS         &kp EQUAL        &kp FSLH  &kp LS(STAR)  &kp BACKSLASH  &kp SQT
                                    &mo 5         &kp LSHFT         &none            &none
             >;
         };
