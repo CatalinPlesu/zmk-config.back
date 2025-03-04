@@ -1,8 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
-
 
 / {
     combos {
@@ -175,9 +173,9 @@
 
         navigation {
             bindings = <
-&kp ESC         &caps_word      &kp CAPS      &kp LCTRL        &kp LEFT_SHIFT    &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp BSPC
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp TAB           &kp LEFT       &kp DOWN       &kp UP        &kp RIGHT  &kp BACKSPACE
-&kp LC(Z)       &kp LC(X)       &kp LC(C)     &kp LC(V)        &kp BACKSPACE     &trans         &kp TAB        &kp LEFT_ALT  &trans     &trans
+&kp ESC         &caps_word      &kp CAPS      &kp LCTRL        &kp LEFT_SHIFT    &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP   &kp END         &kp BSPC
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp TAB           &kp LEFT       &kp DOWN       &kp UP        &kp RIGHT       &kp BACKSPACE
+&kp LC(Z)       &kp LC(X)       &kp LC(C)     &kp LC(V)        &kp BACKSPACE     &trans         &kp TAB        &kp LEFT_ALT  &kp LEFT_SHIFT  &trans
                                               &none            &none             &kp BACKSPACE  &kp DELETE
             >;
         };
