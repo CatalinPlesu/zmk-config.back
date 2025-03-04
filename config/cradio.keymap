@@ -115,6 +115,11 @@
             bindings = <&tog 3>;
             key-positions = <0 9>;
         };
+
+        mouse {
+            bindings = <&tog 7>;
+            key-positions = <31 32>;
+        };
     };
 
     behaviors {
@@ -126,6 +131,22 @@
             #binding-cells = <2>;
             tapping-term-ms = <400>;
             flavor = "balanced";
+        };
+
+        mouse_move: mouse_move {
+            compatible = "zmk,behavior-input-two-axis";
+            label = "MOUSE_MOVE";
+            #binding-cells = <1>;
+            x-input-code = <0>;
+            y-input-code = <1>;
+            acceleration-exponent = <0>;
+            time-to-max-speed-ms = <15>;
+        };
+
+        mouse_press: mouse_press {
+            compatible = "zmk,behavior-mouse-key-press";
+            label = "MOUSE_PRESS";
+            #binding-cells = <1>;
         };
     };
 
@@ -152,9 +173,9 @@
 
         navigation {
             bindings = <
-&kp ESC         &caps_word      &kp CAPS      &kp LCTRL        &kp LEFT_SHIFT    &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp BSPC
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp TAB           &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT  &kp BACKSPACE
-&kp LC(Z)       &kp LC(X)       &kp LC(C)     &kp LC(V)        &kp BACKSPACE     &trans         &kp TAB        &trans       &trans     &trans
+&kp ESC         &caps_word      &kp CAPS      &kp LCTRL        &kp LEFT_SHIFT    &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp BSPC
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp TAB           &kp LEFT       &kp DOWN       &kp UP        &kp RIGHT  &kp BACKSPACE
+&kp LC(Z)       &kp LC(X)       &kp LC(C)     &kp LC(V)        &kp BACKSPACE     &trans         &kp TAB        &kp LEFT_ALT  &trans     &trans
                                               &none            &none             &kp BACKSPACE  &kp DELETE
             >;
         };
@@ -192,6 +213,15 @@
 &bt BT_PRV  &bt BT_NXT      &bt BT_SEL 0  &trans  &trans         &trans       &trans  &trans  &trans  &trans
 &trans      &trans          &trans        &trans  &trans         &trans       &trans  &trans  &trans  &trans
                                           &tog 6  &trans         &trans       &tog 6
+            >;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans             &trans             &trans             &trans    &trans                 &trans                 &trans               &trans                  &trans
+&trans  &mouse_press RCLK  &mouse_press MCLK  &mouse_press LCLK  &trans    &mouse_move MOVE_LEFT  &mouse_move MOVE_DOWN  &mouse_move MOVE_UP  &mouse_move MOVE_RIGHT  &trans
+&trans  &trans             &trans             &trans             &trans    &trans                 &trans                 &trans               &trans                  &trans
+                                              &tog 7             &trans    &trans                 &tog 7
             >;
         };
     };
