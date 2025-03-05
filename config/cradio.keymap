@@ -139,8 +139,8 @@
             #binding-cells = <1>;
             x-input-code = <0>;
             y-input-code = <1>;
-            acceleration-exponent = <0>;
-            time-to-max-speed-ms = <15>;
+            acceleration-exponent = <2>;
+            time-to-max-speed-ms = <500>;
         };
 
         mouse_press: mouse_press {
@@ -218,10 +218,10 @@
 
         mouse {
             bindings = <
-&trans  &trans             &trans             &trans             &trans    &trans                 &trans                 &trans               &trans                  &trans
-&trans  &mouse_press RCLK  &mouse_press MCLK  &mouse_press LCLK  &trans    &mouse_move MOVE_LEFT  &mouse_move MOVE_DOWN  &mouse_move MOVE_UP  &mouse_move MOVE_RIGHT  &trans
-&trans  &trans             &trans             &trans             &trans    &trans                 &trans                 &trans               &trans                  &trans
-                                              &tog 7             &trans    &trans                 &tog 7
+&trans  &trans             &mouse_move MOVE_Y(-100)  &mouse_move MOVE_Y(100)  &trans    &trans                 &trans                 &trans               &trans                  &trans
+&trans  &mouse_press RCLK  &mouse_press MCLK         &mouse_press LCLK        &trans    &mouse_move MOVE_LEFT  &mouse_move MOVE_DOWN  &mouse_move MOVE_UP  &mouse_move MOVE_RIGHT  &trans
+&trans  &trans             &mouse_press MB4          &mouse_press MB5         &trans    &trans                 &trans                 &trans               &trans                  &trans
+                                                     &tog 7                   &trans    &trans                 &tog 7
             >;
         };
     };
