@@ -6,7 +6,7 @@
     combos {
         compatible = "zmk,combos";
 
-        asset {
+        switch-layout {
             bindings = <&tog 1>;
             key-positions = <20 9>;
             timeout-ms = <500>;
@@ -40,7 +40,7 @@
         };
 
         rgui {
-            bindings = <&kp RGUI>;
+            bindings = <&kp LGUI>;
             key-positions = <33 17>;
             timeout-ms = <50>;
             require-prior-idle-ms = <25>;
@@ -113,12 +113,28 @@
 
         macros {
             bindings = <&tog 3>;
-            key-positions = <0 9>;
+            key-positions = <30 33>;
         };
 
         mouse {
             bindings = <&tog 7>;
             key-positions = <31 32>;
+        };
+
+        r-ctrl-alt {
+            bindings = <&kp LC(LEFT_ALT)>;
+            key-positions = <16 17 33>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <25>;
+            layers = <1 0>;
+        };
+
+        l-ctrl-alt {
+            bindings = <&kp LC(LEFT_ALT)>;
+            key-positions = <12 13 30>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <25>;
+            layers = <1 0>;
         };
     };
 
