@@ -117,7 +117,7 @@
         };
 
         mouse {
-            bindings = <&tog 7>;
+            bindings = <&tog 0>;
             key-positions = <31 32>;
         };
 
@@ -147,16 +147,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <400>;
             flavor = "balanced";
-        };
-
-        mouse_move: mouse_move {
-            compatible = "zmk,behavior-input-two-axis";
-            label = "MOUSE_MOVE";
-            #binding-cells = <1>;
-            x-input-code = <0>;
-            y-input-code = <1>;
-            acceleration-exponent = <2>;
-            time-to-max-speed-ms = <500>;
         };
 
         mouse_press: mouse_press {
@@ -229,15 +219,6 @@
 &bt BT_PRV  &bt BT_NXT      &bt BT_SEL 0  &trans  &trans         &trans       &trans  &trans  &trans  &trans
 &trans      &trans          &trans        &trans  &trans         &trans       &trans  &trans  &trans  &trans
                                           &tog 6  &trans         &trans       &tog 6
-            >;
-        };
-
-        mouse {
-            bindings = <
-&trans  &trans             &mouse_move MOVE_Y(-100)  &mouse_move MOVE_Y(100)  &trans    &trans                 &trans                 &trans               &trans                  &trans
-&trans  &mouse_press RCLK  &mouse_press MCLK         &mouse_press LCLK        &trans    &mouse_move MOVE_LEFT  &mouse_move MOVE_DOWN  &mouse_move MOVE_UP  &mouse_move MOVE_RIGHT  &trans
-&trans  &trans             &mouse_press MB4          &mouse_press MB5         &trans    &trans                 &trans                 &trans               &trans                  &trans
-                                                     &tog 7                   &trans    &trans                 &tog 7
             >;
         };
     };
