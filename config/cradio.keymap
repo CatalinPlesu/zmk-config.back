@@ -6,29 +6,20 @@
     combos {
         compatible = "zmk,combos";
 
-        switch-layout {
-            bindings = <&tog 1>;
-            key-positions = <20 9>;
-            timeout-ms = <500>;
-            require-prior-idle-ms = <1>;
-            slow-release;
-            layers = <1 0>;
-        };
-
         settings-layer-left {
-            bindings = <&to 6>;
+            bindings = <&to 5>;
             key-positions = <0 3>;
             timeout-ms = <500>;
             require-prior-idle-ms = <1>;
-            layers = <1 0>;
+            layers = <0>;
         };
 
         settings-layer-right {
-            bindings = <&to 6>;
+            bindings = <&to 5>;
             key-positions = <6 9>;
             timeout-ms = <500>;
             require-prior-idle-ms = <1>;
-            layers = <1 0>;
+            layers = <0>;
         };
 
         lgui {
@@ -36,7 +27,7 @@
             key-positions = <30 12>;
             timeout-ms = <50>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0>;
         };
 
         rgui {
@@ -44,7 +35,7 @@
             key-positions = <33 17>;
             timeout-ms = <50>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0>;
         };
 
         lalt {
@@ -52,7 +43,7 @@
             key-positions = <13 30>;
             timeout-ms = <50>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0>;
         };
 
         ralt {
@@ -60,7 +51,7 @@
             key-positions = <16 33>;
             timeout-ms = <50>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0>;
         };
 
         lshift {
@@ -68,7 +59,7 @@
             key-positions = <31 12>;
             timeout-ms = <50>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0>;
         };
 
         rshift {
@@ -76,7 +67,7 @@
             key-positions = <32 17>;
             timeout-ms = <100>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0>;
         };
 
         lctrl {
@@ -84,7 +75,7 @@
             key-positions = <13 31>;
             timeout-ms = <50>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0>;
         };
 
         rctrl {
@@ -92,7 +83,7 @@
             key-positions = <16 32>;
             timeout-ms = <100>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0>;
         };
 
         ctrl-shift {
@@ -100,7 +91,7 @@
             key-positions = <16 17 32>;
             timeout-ms = <100>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0>;
         };
 
         l_ctrl_shift {
@@ -108,11 +99,11 @@
             key-positions = <12 13 31>;
             timeout-ms = <100>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0>;
         };
 
         macros {
-            bindings = <&tog 3>;
+            bindings = <&tog 2>;
             key-positions = <30 33>;
         };
 
@@ -126,7 +117,7 @@
             key-positions = <16 17 33>;
             timeout-ms = <100>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0>;
         };
 
         l-ctrl-alt {
@@ -134,7 +125,7 @@
             key-positions = <12 13 30>;
             timeout-ms = <100>;
             require-prior-idle-ms = <25>;
-            layers = <1 0>;
+            layers = <0>;
         };
     };
 
@@ -164,16 +155,7 @@
 &kp Q  &kp W  &kp J  &kp F  &kp G        &kp Y      &kp P  &kp U      &kp L    &kp SEMI
 &kp A  &kp S  &kp E  &kp T  &kp D        &kp H      &kp N  &kp I      &kp O    &kp R
 &kp Z  &kp X  &kp C  &kp V  &kp B        &kp K      &kp M  &kp COMMA  &kp DOT  &kp FSLH
-                     &mo 2  &kp SPACE    &kp ENTER  &mo 4
-            >;
-        };
-
-        qwerty {
-            bindings = <
-&kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI
-&kp Z  &kp X  &kp C  &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp SLASH
-                     &mo 2  &kp SPACE    &kp RET  &mo 4
+                     &mo 1  &kp SPACE    &kp ENTER  &mo 3
             >;
         };
 
@@ -200,7 +182,7 @@
 &kp ESC   &kp GRAVE  &kp LS(LPAR)  &kp LBKT      &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RBKT  &kp LS(RPAR)  &kp BACKSLASH  &kp BACKSPACE
 &kp N1    &kp N2     &kp N3        &kp N4        &kp N5            &kp N6           &kp N7    &kp N8        &kp N9         &kp N0
 &kp LGUI  &kp LALT   &kp LCTRL     &kp LS(PLUS)  &kp MINUS         &kp EQUAL        &kp FSLH  &kp LS(STAR)  &kp BACKSLASH  &kp SQT
-                                   &mo 5         &kp LSHFT         &none            &none
+                                   &mo 4         &kp LSHFT         &none            &none
             >;
         };
 
@@ -218,7 +200,7 @@
 &bt BT_CLR  &bt BT_CLR_ALL  &trans        &trans  &bootloader    &bootloader  &trans  &trans  &trans  &trans
 &bt BT_PRV  &bt BT_NXT      &bt BT_SEL 0  &trans  &trans         &trans       &trans  &trans  &trans  &trans
 &trans      &trans          &trans        &trans  &trans         &trans       &trans  &trans  &trans  &trans
-                                          &tog 6  &trans         &trans       &tog 6
+                                          &tog 5  &trans         &trans       &tog 5
             >;
         };
     };
