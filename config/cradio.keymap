@@ -127,6 +127,22 @@
             require-prior-idle-ms = <25>;
             layers = <0>;
         };
+
+        rgui-wide {
+            bindings = <&kp LGUI>;
+            key-positions = <18 32>;
+            timeout-ms = <125>;
+            require-prior-idle-ms = <25>;
+            layers = <0>;
+        };
+
+        ralt-wide {
+            bindings = <&kp LALT>;
+            key-positions = <19 32>;
+            timeout-ms = <125>;
+            require-prior-idle-ms = <25>;
+            layers = <0>;
+        };
     };
 
     behaviors {
