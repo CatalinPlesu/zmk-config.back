@@ -162,14 +162,6 @@
             #binding-cells = <1>;
         };
 
-        repeat_key: repeat_key {
-            compatible = "zmk,behavior-key-repeat";
-            label = "REPEAT_KEY";
-            #binding-cells = <0>;
-            usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>;
-
-            ;
-        };
     };
 
     keymap {
