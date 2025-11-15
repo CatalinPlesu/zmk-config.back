@@ -24,8 +24,8 @@
 
         lgui {
             bindings = <&kp LGUI>;
-            key-positions = <30 12>;
-            timeout-ms = <50>;
+            key-positions = <31 11>;
+            timeout-ms = <75>;
             require-prior-idle-ms = <25>;
             layers = <0>;
         };
@@ -40,8 +40,8 @@
 
         lalt {
             bindings = <&kp LALT>;
-            key-positions = <13 30>;
-            timeout-ms = <50>;
+            key-positions = <10 31>;
+            timeout-ms = <75>;
             require-prior-idle-ms = <25>;
             layers = <0>;
         };
