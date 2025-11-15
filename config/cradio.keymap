@@ -107,8 +107,8 @@
             key-positions = <30 33>;
         };
 
-        mouse {
-            bindings = <&tog 0>;
+        enter {
+            bindings = <&kp ENTER>;
             key-positions = <31 32>;
         };
 
@@ -155,34 +155,34 @@
 &kp Q  &kp W  &kp J  &kp F  &kp G        &kp Y      &kp P  &kp U      &kp L    &kp SEMI
 &kp A  &kp S  &kp E  &kp T  &kp D        &kp H      &kp N  &kp I      &kp O    &kp R
 &kp Z  &kp X  &kp C  &kp V  &kp B        &kp K      &kp M  &kp COMMA  &kp DOT  &kp FSLH
-                     &mo 1  &kp SPACE    &kp ENTER  &mo 3
+                     &mo 3  &kp SPACE    &kp LSHFT  &mo 1
             >;
         };
 
         navigation {
             bindings = <
-&kp ESC         &caps_word      &kp CAPS      &kp LCTRL        &kp LEFT_SHIFT    &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp BSPC
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp TAB           &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT  &kp BACKSPACE
-&kp LC(Z)       &kp LC(X)       &kp LC(C)     &kp LC(V)        &kp BACKSPACE     &trans         &kp TAB        &kp LSHFT    &kp LCTRL  &kp LALT
-                                              &none            &none             &kp BACKSPACE  &kp DELETE
+&kp ESC    &caps_word  &kp CAPS   &kt LSHIFT  &trans      &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
+&kp LALT   &kp LGUI    &kp LSHFT  &kp LCTRL   &kp TAB     &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT  &trans
+&kp LC(Z)  &kp LC(X)   &kp LC(C)  &kp LC(V)   &trans      &kp TAB        &kp ENTER      &trans       &trans     &trans
+                                  &kp DEL     &kp BSPC    &kp BACKSPACE  &kp DELETE
             >;
         };
 
         macros {
             bindings = <
-&trans     &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans
-&trans     &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans    &trans  &trans  &trans  &trans  &trans
+&trans     &trans     &trans     &trans     &trans    &trans  &trans     &trans  &trans  &trans
+&kp LC(A)  &trans     &trans     &kp SPACE  &trans    &trans  &kp ENTER  &trans  &trans  &trans
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans    &trans  &trans     &trans  &trans  &trans
                                  &trans     &trans    &trans  &trans
             >;
         };
 
         numbers {
             bindings = <
-&kp ESC   &kp GRAVE  &kp LS(LPAR)  &kp LBKT      &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RBKT  &kp LS(RPAR)  &kp BACKSLASH  &kp BACKSPACE
-&kp N1    &kp N2     &kp N3        &kp N4        &kp N5            &kp N6           &kp N7    &kp N8        &kp N9         &kp N0
-&kp LGUI  &kp LALT   &kp LCTRL     &kp LS(PLUS)  &kp MINUS         &kp EQUAL        &kp FSLH  &kp LS(STAR)  &kp BACKSLASH  &kp SQT
-                                   &mo 4         &kp LSHFT         &none            &none
+&kp ESC    &kp N1  &kp N2  &kp N3  &trans       &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH      &kp BACKSPACE
+&kp GRAVE  &kp N4  &kp N5  &kp N6  &kp N0       &kp MINUS      &kp LBKT              &kp RBKT               &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE
+&kp LGUI   &kp N7  &kp N8  &kp N9  &kp LCTRL    &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH      &kp LALT
+                           &mo 4   &kp LSHFT    &kp LSHFT      &mo 4
             >;
         };
 
