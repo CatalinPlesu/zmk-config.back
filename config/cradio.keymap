@@ -195,10 +195,10 @@
 
         numbers {
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3  &trans       &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH      &kp BACKSPACE
-&kp GRAVE  &kp N4  &kp N5  &kp N6  &kp N0       &kp MINUS      &kp LBKT              &kp RBKT               &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE
-&kp LGUI   &kp N7  &kp N8  &kp N9  &kp LCTRL    &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH      &kp LALT
-                           &mo 4   &kp LSHFT    &kp LSHFT      &mo 4
+&kp GRAVE     &kp N1  &kp N2  &kp N3  &trans       &trans     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH      &kp BACKSPACE
+&kp NUMBER_0  &kp N4  &kp N5  &kp N6  &kp EQUAL    &kp MINUS  &kp LBKT              &kp RBKT               &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE
+&kp LCTRL     &kp N7  &kp N8  &kp N9  &trans       &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LGUI           &kp LALT
+                              &mo 4   &kp LSHFT    &kp LSHFT  &mo 4
             >;
         };
 
