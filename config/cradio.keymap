@@ -186,7 +186,7 @@
 
         macros {
             bindings = <
-&trans     &trans     &trans     &trans     &trans    &trans  &trans     &trans  &trans  &trans
+&trans     &trans     &trans     &trans     &kp F5    &trans  &trans     &trans  &trans  &trans
 &kp LC(A)  &trans     &trans     &kp SPACE  &trans    &trans  &kp ENTER  &trans  &trans  &trans
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans    &trans  &trans     &trans  &trans  &trans
                                  &trans     &trans    &trans  &trans
