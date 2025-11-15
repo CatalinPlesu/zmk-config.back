@@ -177,8 +177,8 @@
 
         navigation {
             bindings = <
-&kp ESC    &caps_word  &kp CAPS   &kt LSHIFT  &trans      &trans         &kp HOME    &kp PG_DN  &kp PG_UP  &kp END
-&kp LALT   &kp LGUI    &kp LSHFT  &kp LCTRL   &trans      &trans         &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT
+&kp ESC    &caps_word  &kp CAPS   &kt LSHIFT  &trans      &trans         &kp HOME    &kp PG_UP  &kp PG_DN  &kp END
+&kp LALT   &kp LGUI    &kp LSHFT  &kp LCTRL   &trans      &trans         &kp LEFT    &kp UP     &kp DOWN   &kp RIGHT
 &kp LC(Z)  &kp LC(X)   &kp LC(C)  &kp LC(V)   &trans      &trans         &kp TAB     &kp RET    &trans     &trans
                                   &kp DEL     &kp BSPC    &kp BACKSPACE  &kp DELETE
             >;
