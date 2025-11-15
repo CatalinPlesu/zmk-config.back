@@ -161,7 +161,6 @@
             label = "MOUSE_PRESS";
             #binding-cells = <1>;
         };
-
     };
 
     keymap {
@@ -172,7 +171,7 @@
 &kp Q  &kp W  &kp J  &kp F  &kp G        &kp Y        &kp P  &kp U      &kp L    &kp SEMI
 &kp A  &kp S  &kp E  &kp T  &kp D        &kp H        &kp N  &kp I      &kp O    &kp R
 &kp Z  &kp X  &kp C  &kp V  &kp B        &kp K        &kp M  &kp COMMA  &kp DOT  &kp FSLH
-                     &mo 3  &kp SPACE    &repeat_key  &mo 1
+                     &mo 3  &kp SPACE    &key_repeat  &mo 1
             >;
         };
 
