@@ -26,7 +26,7 @@
             bindings = <&kp LGUI>;
             key-positions = <31 11>;
             timeout-ms = <125>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <125>;
             layers = <0>;
         };
 
@@ -42,7 +42,7 @@
             bindings = <&kp LALT>;
             key-positions = <10 31>;
             timeout-ms = <125>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <125>;
             layers = <0>;
         };
 
@@ -132,7 +132,7 @@
             bindings = <&kp LGUI>;
             key-positions = <18 32>;
             timeout-ms = <125>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <125>;
             layers = <0>;
         };
 
@@ -140,7 +140,7 @@
             bindings = <&kp LALT>;
             key-positions = <19 32>;
             timeout-ms = <125>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <125>;
             layers = <0>;
         };
     };
